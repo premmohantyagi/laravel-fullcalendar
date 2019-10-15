@@ -1,0 +1,37 @@
+{
+    "name": "extreme/laravel-fullcalendar",
+    "description": "Laravel helper for FullCalendar.io",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "laravel 5",
+        "laravel 6",        
+        "fullcalendar"
+    ],
+    "authors": [
+        {
+            "name": "PM Tyagi",
+            "email": "premmohantyagi@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "illuminate/support": "*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Extreme\\LaravelFullcalendar": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Extreme\\LaravelFullcalendar\\ServiceProvider"
+            ],
+            "aliases": {
+                "Calendar": "Extreme\\LaravelFullcalendar\\Facades\\Calendar"
+            }
+        }
+    },
+    "minimum-stability": "stable"
+}
